@@ -1,6 +1,6 @@
 def valoremonete(a,b,c,d):
     return (a+2*b+5*c+10*d)
-def cambio(a,b,c,d,x,):
+def cambio(a,b,c,d,x):
     if valoremonete(a,b,c,d)==50:
         x=x+1
     if d==5:
