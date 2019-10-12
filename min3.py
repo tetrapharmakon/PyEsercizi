@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Esercizio:
+# ESERCIZIO:
 # dati tre numeri, definire una funzione che prende i due numeri più grandi
 # per poi sommarne i quadrati
 
