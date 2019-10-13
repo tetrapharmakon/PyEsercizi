@@ -5,6 +5,7 @@
 # per poi sommarne i quadrati
 
 # IDEA: sommare i quadrati dei tre numeri e togliere il quadrato del numero più piccolo
+
 # per trovare il minimo di tre numeri x ,y e z possiamo fare così:
 # * prendere i primi due numeri e trovarne il minimo, chiamiamolo m
 # * calcolare il minimo tra m e z: questo sarà il più piccolo dei tre
@@ -20,7 +21,7 @@ def min2(x,y):
 def min3(x,y,z):
 	return min2(min2(x,y),z)
 
-# la funzione che cercavamo
+# la funzione che cercavamo!
 def func(x,y,z):
 	return x**2+y**2+y**2-min3(x,y,z)**2
 
