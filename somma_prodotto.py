@@ -17,7 +17,7 @@ def somma(x,y):
 	else:
 		return inc(somma(x,dec(y)))
 
-# la funzione che clacola il prodotto
+# la funzione che calcola il prodotto
 def prodotto(x,y):
 	if y == 0:
 		return 0

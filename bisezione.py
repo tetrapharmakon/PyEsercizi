@@ -15,7 +15,8 @@ def CercaRadice(x,n,a,b,precisione):
 	# se la media è la radice, restituisci quella
 	if m**n == x:
 		return m
-	# se la differenza tra b e a è inferiore ad una soglia, restituisci la loro media
+	# se la differenza tra b e a è inferiore ad una soglia,
+	# restituisci la loro media
 	if b-a < precisione:
 		return m
 	# altrimenti, la funzione richiama se stessa
