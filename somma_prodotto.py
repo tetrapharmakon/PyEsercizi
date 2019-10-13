@@ -24,3 +24,15 @@ def prodotto(x,y):
 	else:
 		return somma(prodotto(x,dec(y)),x)
 
+# definizione alternativa della funzione prodotto
+def ProdottoAlternativo(x,y):
+	# usiamo una "funzione interna"
+	# questa non fa altro che decrementare y ed aggiungere x ad acc
+	# ogni volta che è chiamata
+	def FunzioneInterna(y,acc):
+		if y == 0:
+			return acc
+		else:
+			return FunzioneInterna(y-1,acc+x)
+	# l'idea è di partire con acc = 0
+	return FunzioneInterna(y,0)
