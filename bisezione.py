@@ -25,5 +25,5 @@ def CercaRadice(x,n,a,b,precisione):
 	if m**n < x and b**n > x:
 		return CercaRadice(x,n,m,b,precisione)
 
-print(CercaRadice(3,3,1,3,10**-4))
+#print(CercaRadice(3,3,1,3,10**-4))
 
