@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Esercizio: ricerca con la "forza bruta"
+# ESERCIZIO: ricerca con la "forza bruta"
 # Implementare un algoritmo di ricerca che trovi la radice intera di x
 # nell'insieme { 0, 1, 2, 3, ..., x }
 

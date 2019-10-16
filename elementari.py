@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
-# Esercizio:
+# ESERCIZIO:
 # scrivere funzione che calcolano la somma e il prodotto
 # di due numeri naturali x e y usando solamente le seguenti funzioni
 
+# funzione incremento
 def inc(x):
 	return x+1
 
+# funzione decremento
 def dec(x):
 	return x-1
 

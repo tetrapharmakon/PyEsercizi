@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-# Esercizo: stampa la tabellina di un numero naturale x
+# ESERCIZIO:
+# stampa la tabellina di un numero naturale x
 
 def tab(x):
 	def rec(n):

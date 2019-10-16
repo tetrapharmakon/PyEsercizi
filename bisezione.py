@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+# ESERCIZIO:
 # definizione della funzione di ricerca per bisezione
+
 def CercaRadice(x,n,a,b,precisione):
 	# scegliere a < b !
 	if a > b:
@@ -26,4 +28,3 @@ def CercaRadice(x,n,a,b,precisione):
 		return CercaRadice(x,n,m,b,precisione)
 
 #print(CercaRadice(3,3,1,3,10**-4))
-

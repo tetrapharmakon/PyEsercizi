@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Esercizio:
+# ESERCIZIO:
 # Implementare una funzione che sommi gli elementi di una lista
 
 def somma(lista):
