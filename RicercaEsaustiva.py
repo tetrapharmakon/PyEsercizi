@@ -11,8 +11,7 @@ def CercaRadiceQuadrata(x):
 		else:
 			if x == n**2:
 				return n
-			else:
-				return FunzioneInterna(n-1)
+			return FunzioneInterna(n-1)
 	return FunzioneInterna(x)
 
 print(CercaRadiceQuadrata(9))
