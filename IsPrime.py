@@ -5,8 +5,8 @@
 
 def IsPrime(n):
 	def exaustive(i):
-		if i >= n: # ricerca divisori tra gli interi i < n
-			return True # inutile cercare divisori di n sopra n
+		if i*i > n: # ricerca divisori tra gli interi compresi tra i al quadrato e n
+			return True # inutile cercare divisori di n maggiori di √n (se ci fosse un divisore > √n ci sarebbe anche divisore < √n)
 		if n%i == 0: # se i divide n, allora n sicuramente non primo
 			return False # fine!
 		return exaustive(i+1) # altrimenti prova sul successivo
