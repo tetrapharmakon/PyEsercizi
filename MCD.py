@@ -8,4 +8,4 @@ def MCD(a,b):
 		return a
 	return MCD(b,a%b)
 
-#print(MCD(15,30))
+print(MCD(15,17))

@@ -4,12 +4,21 @@
 # implementare una funzione che dice se un numero è primo o no
 
 def IsPrime(n):
+	# leggi la fine di questo blocco prima!
 	def exaustive(i):
-		if i >= n: # ricerca divisori tra gli interi i < n
-			return True # inutile cercare divisori di n sopra n
-		if n%i == 0: # se i divide n, allora n sicuramente non primo
-			return False # fine!
-		return exaustive(i+1) # altrimenti prova sul successivo
-	return exaustive(2) # voglio che la funzione IsPrime faccia questo!
+		# inutile cercare divisori di n maggiori della radice quadrata di n (= sqrt(n))
+		# infatti: se ci fosse un divisore maggiore di sqrt(n),
+		# ci sarebbe anche divisore minore di sqrt(n) [da riscrivere meglio]
+		if i*i > n:
+		# al posto di "i*i" puoi mettere "i",
+		# ma l'algoritmo risultarà molto lento e occupa più memoria
+			return True
+		# se i divide n, allora n sicuramente non primo
+		if n%i == 0:
+			return False
+		# altrimenti prova sul successivo
+		return exaustive(i+1)
+	# voglio che la funzione IsPrime faccia questo!
+	return exaustive(2)
 
-#print(IsPrime(7))
+#print(IsPrime(111213141))
