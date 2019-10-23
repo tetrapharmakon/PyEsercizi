@@ -35,3 +35,4 @@ def ProdottoAlternativo(x,y):
 		return FunzioneInterna(y-1,acc+x)
 	# l'idea è di partire con acc = 0
 	return FunzioneInterna(y,0)
+
