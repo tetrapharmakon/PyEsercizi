@@ -17,8 +17,7 @@ def sommatoriaII(f,i,n):
 		return iterazione(s+f(j),j+1)
 	return iterazione(0,i)
 
+#from math import sqrt
+
 #def pi(n):
 #	return sqrt(6*sommatoriaII(lambda _: _**-2, 1, n))
-
-#print(pi(450))
-
