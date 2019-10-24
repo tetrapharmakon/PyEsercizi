@@ -3,19 +3,24 @@
 # ESERCIZIO:
 # Implementare una funzione che sommi gli elementi di una lista
 
-def somma(lista):
-	# una funzione interna così definita:
-	# __somma__(0) = "primo elemento della lista"
-	# __somma__(n) = __somma__(n-1)+"n-esimo termine della lista"
-	def __somma__(n):
-		if n == 0:
-			return lista[0]
-		else:
-			return __somma__(n-1)+lista[n]
-	if lista == []:
-		return None
-	else:
-		# emetti il valore __somma__("lunghezza della lista"-1)
-		return __somma__(len(lista)-1)
+#from math import sqrt
 
-print(somma([1,2,3,4]))
+def sommatoriaI(f,i,n):
+	def somma(j):
+		if j == i:
+			return f(j)
+		return somma(j-1)+f(j)
+	return somma(n)
+
+def sommatoriaII(f,i,n):
+	def iterazione(s,j):
+		if j > n:
+			return s
+		return iterazione(s+f(j),j+1)
+	return iterazione(0,i)
+
+#def pi(n):
+#	return sqrt(6*sommatoriaII(lambda n: n**-2, 1, 100))
+
+#print(pi(10))
+
