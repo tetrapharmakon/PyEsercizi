@@ -3,8 +3,6 @@
 # ESERCIZIO:
 # Implementare una funzione che sommi gli elementi di una lista
 
-#from math import sqrt
-
 def sommatoriaI(f,i,n):
 	def somma(j):
 		if j == i:
@@ -20,7 +18,7 @@ def sommatoriaII(f,i,n):
 	return iterazione(0,i)
 
 #def pi(n):
-#	return sqrt(6*sommatoriaII(lambda n: n**-2, 1, 100))
+#	return sqrt(6*sommatoriaII(lambda _: _**-2, 1, n))
 
-#print(pi(10))
+#print(pi(450))
 
