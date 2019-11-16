@@ -5,10 +5,8 @@
 
 # definizione ricorsiva (quella "matematica")
 
-def f(n):
-	if n == 0:
-		return 1
-	return f(n-1)*n
+def fucktorial(n):
+	return 1 if n==0 else fucktorial(n-1)*n
 
 # definizione iterativa
 
