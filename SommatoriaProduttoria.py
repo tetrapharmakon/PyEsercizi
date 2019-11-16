@@ -3,6 +3,20 @@
 # ESERCIZIO:
 # Implementare le funzioni sommatoria e produttoria
 
+#===================================================
+import functools
+import operator
+
+def foldl(func, acc, xs):
+  return functools.reduce(func, xs, acc)
+
+def suma(xs):
+	return foldl(operator.add, 0, xs)
+
+def prodo(xs):
+	return foldl(operator.mul, 1, xs)
+#===================================================
+
 def sommatoriaI(F,i,n):
 	def somma(j):
 		if j == i:
@@ -30,4 +44,3 @@ def produttoriaII(F,i,n):
 			return p
 		return iterazione(p*F(j),j+1)
 	return iterazione(1,i)
-

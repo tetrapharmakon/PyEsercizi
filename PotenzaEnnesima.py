@@ -3,6 +3,23 @@
 # ESERCIZIO:
 # definire ricorsivamente la funzione potenza con esponente naturale
 
+
+#===================================================
+import functools
+import operator
+from SommatoriaProduttoria import prodo as pd
+
+def foldl(func, acc, xs):
+  return functools.reduce(func, xs, acc)
+
+def const(x,a):
+	return a
+
+def puten(x,n):
+	return pd(map(lambda y: const(y,x), range(n)))
+
+#===================================================
+
 def potenza(x,n):
 	if n == 0:
 		return 1

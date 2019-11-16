@@ -32,5 +32,4 @@ def min3(x,y,z):
 
 # la funzione che cercavamo!
 def f(x,y,z):
-	return x**2+y**2+y**2-min3(x,y,z)**2
-
+	return x**2+y**2+z**2-min3(x,y,z)**2
